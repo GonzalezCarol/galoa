@@ -1,0 +1,15 @@
+.div-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-page-text p{
+    background-color: var(--color-background);
+    max-width: 75rem;
+    color: var(--color-primary);
+    font: 2.0rem Roboto ;
+    font-weight: bold;
+    
+}

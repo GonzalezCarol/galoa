@@ -1,19 +1,4 @@
 
-.div-top{
-    display: flex;
-    flex-direction: column;
-}
-
-.top-page-text p{
-    background-color: var(--color-background);
-    max-width: 80rem;
-    color: var(--color-primary);
-    font: 2.2rem Roboto ;
-    font-weight: bold;
-    padding: 2.0rem;
-    
-}
-
 .grid {
     display: grid;
   }
