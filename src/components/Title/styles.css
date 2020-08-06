@@ -3,13 +3,52 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    top: 0;
+    bottom: 0; 
+    padding-bottom: 2.0rem;
 }
 
 .top-page-text p{
     background-color: var(--color-background);
-    max-width: 75rem;
+    max-width: 70rem;
     color: var(--color-primary);
     font: 2.0rem Roboto ;
     font-weight: bold;
     
+}
+
+
+.div-top .right-elements .how {
+    color: var(--color-primary);
+    font: 500 1.4rem Roboto;
+    display: flex;
+    justify-content: end;
+
+       
+}
+
+.div-top .right-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.div-top .right-elements .buttons-right-page{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+     
+}
+
+.div-top .right-elements .buttons-right-page button{
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    display: flex;
+    font-size:  1.6rem;
+    padding: 0.6rem;
+    border-radius: 11%;
+    margin:3px;
+    border: none;
 }

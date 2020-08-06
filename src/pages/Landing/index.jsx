@@ -13,13 +13,13 @@ function TeacherList() {
             <SideMenu className="side-nav" />
             <PageHeader className="page-header" />
 
-            <main>
+            <div className="content">
                 <Title />
                 
                 <VideoDiv />
 
                 
-            </main>
+            </div>
         </section>
                     
         </>

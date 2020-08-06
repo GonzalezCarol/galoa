@@ -4,10 +4,10 @@
   }
   .grid-template {
     grid-template:
-      "logo nav nav" px
-      "sidenav content advert" 300px
-      "sidenav footer footer" 300
-      / 100px 1fr 50px;
+      "logo nav nav" 50px
+      "sidenav content" 300px
+      "sidenav footer footer" 300px
+      / 100px 2fr 25px;
   }
   ​
   .gap {
@@ -44,10 +44,6 @@
   ​
   .sidenav {
     grid-area: sidenav;
-  }
-  ​
-  .advert {
-    grid-area: advert;
   }
   ​
   .footer {

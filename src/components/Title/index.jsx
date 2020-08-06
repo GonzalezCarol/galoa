@@ -11,11 +11,13 @@ function Title() {
                     entre 09 e 15 anos, do município de Campinas/SP
                 </p>
             </div>
-            <div className="buttons-right-page">
-                <button type="button">Download</button>
-                <button type="button">Download</button>
-                <button type="button">Download</button>
-                    <div>
+            <div className="right-elements">
+                <div className="buttons-right-page">
+                    <button type="button">Download</button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                </div>
+                    <div className="how">
                         <span>
                         COMO CITAR ESSE TRABALHO?
                         </span>

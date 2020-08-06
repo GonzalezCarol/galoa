@@ -1,6 +1,27 @@
 .div-video {
-    height: 30rem;
-    width: 70rem;
-    background-color: turquoise;
+    height: 40rem;
+    width: 67rem;
+    background-image: url('../../assets/images/ocean.jpg');
+    opacity: 0.6;
+    position: absolute;
+    border-radius: 3px;
     
+} 
+.div-video-child {
+    height: 40rem;
+    width: 67rem;
+    opacity: 0.7;
+    position: relative;
+    border-radius: 3px;
+    background-color: var(--color-primary-dark);
+
+    
+} 
+
+.div-video-child .video-title{
+   font: 900 2.2rem Roboto;
+   padding: 3.0rem;
+   color: var(--color-background);
+
+
 } 
