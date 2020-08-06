@@ -1,0 +1,47 @@
+:root {
+    --color-background: #F0F0F7;
+    --color-primary-lighter: #f8e7dd;
+    --color-primary: #e47c42;
+    --color-primary-light:#fca950;
+    --color-brown: #f5d5c6;
+    --color-brown-light:#fce3d8;
+    --color-brown-dark:#776362;
+    --color-black: #0000;
+    --color-primary-side: #f2833e;
+    --color-lines: #e4d7d7;
+    --color-primary-to-gradiente: #fdaa50;
+
+    font-size: 70%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100vh;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+#root {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: var(--color-primary-lighter);
+}
+
+body,
+input,
+button,
+
+textarea {
+  font: 100 1.6rem Roboto;
+}
