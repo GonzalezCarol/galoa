@@ -2,7 +2,6 @@
     height: 40rem;
     width: 67rem;
     background-image: url('../../assets/images/ocean.jpg');
-    opacity: 0.6;
     position: absolute;
     border-radius: 3px;
     
@@ -10,12 +9,13 @@
 .div-video-child {
     height: 40rem;
     width: 67rem;
+    display: flex;
+    flex-direction: column;
     opacity: 0.7;
     position: relative;
     border-radius: 3px;
     background-color: var(--color-primary-dark);
-
-    
+ 
 } 
 
 .div-video-child .video-title{
@@ -25,3 +25,94 @@
 
 
 } 
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    margin:3rem;
+}
+
+.footer img{
+    height: 5.3rem;
+    width: 5.6rem;
+    border-radius: 50%;
+    border: 0.1rem solid;
+    border-color: var(--color-primary);
+    
+}
+
+.footer .footer-title {
+    color: var(--color-background);
+    font: 500 2.4rem Roboto;
+    margin-left: 1.6rem;
+    
+}
+
+.div-video-child .play-elements  .progress-status { 
+    width:70%;
+    height: 0.4rem; 
+    background-color: var(--color-background);
+    position: absolute;
+    bottom: 0;
+    border-radius: 7em;
+    margin: 1.7rem;
+    margin-left: 5rem;
+    opacity: 0.3;
+} 
+
+.div-video-child .play-elements .progress-status .progress-bar { 
+    width: 20%; 
+    height: 0.4rem; 
+    background-color: var(--color-blue); 
+    text-align: center; 
+    border-radius: 7em;
+    
+} 
+
+.play-elements {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-height: 2.6rem;
+}
+
+.play-elements img {
+   height: 4rem;
+   width: 4rem;
+   position: absolute;
+   bottom: 0;
+   align-self: center;
+}
+
+
+.play-elements #minute {
+  font: 500 1.0rem Roboto;
+  color: var(--color-background);
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  right: 11rem;
+  padding: 0.4rem;
+  transform: translateY(-50%);
+ }
+
+
+
+.play-elements #button-audio {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 7rem;
+    height: 2.6rem;
+    transform: translateY(-26%);
+    opacity: 0.6;
+   }
+   
+       
+ 
+     
+
+    
