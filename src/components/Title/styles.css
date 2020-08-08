@@ -6,6 +6,7 @@
     top: 0;
     bottom: 0; 
     padding-bottom: 2.0rem;
+    padding-left:27rem;
 }
 
 .top-page-text p{
@@ -38,7 +39,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    padding-right: 3rem;
      
 }
 
@@ -46,9 +47,19 @@
     background-color: var(--color-primary);
     color: var(--color-background);
     display: flex;
-    font-size:  1.6rem;
-    padding: 0.6rem;
-    border-radius: 11%;
-    margin:3px;
+    padding:0.5rem 1.3rem;
+    border-radius: 0.4rem;
+    margin:0.3rem;
     border: none;
+}
+
+.div-top .right-elements .buttons-right-page button:first-child img{
+    font-size: 500 1.6rem Roboto;
+    color: var(--color-background);
+    padding-right: 0.7rem;
+   
+}
+
+.right-elements {
+    margin-left: 4rem;
 }

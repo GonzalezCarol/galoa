@@ -5,9 +5,9 @@
   .grid-template {
     grid-template:
       "logo nav nav" 50px
-      "sidenav content" 300px
+      "sidenav content" 400px
       "sidenav footer footer" 300px
-      / 100px 2fr 25px;
+      / 200px 2fr 25px;
   }
   ​
   .gap {

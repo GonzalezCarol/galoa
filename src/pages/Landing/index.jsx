@@ -5,8 +5,11 @@ import PageHeader from '../../components/PageHeader';
 import SideMenu from '../../components/SideMenu';
 import VideoDiv from '../../components/VideoDiv';
 import Title from '../../components/Title';
+import DefaultDiv from '../../components/DefaultDiv';
 
-function TeacherList() {
+
+
+function Landing() {
     return (
         <>
         <section class="grid grid-template gap">
@@ -18,6 +21,10 @@ function TeacherList() {
                 
                 <VideoDiv />
 
+{/*                 
+                <DefaultDiv>
+                    
+                </DefaultDiv> */}
                 
             </div>
         </section>
@@ -26,4 +33,4 @@ function TeacherList() {
     )
 }
 
-export default TeacherList;
+export default Landing;

@@ -1,6 +1,6 @@
 .sidenav {
     height: 100%;
-    width: 18rem;
+    width: 23rem;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -28,12 +28,10 @@
     font: 500 1.6rem Roboto;
     display: flex;
     align-items: start;
-    /* margin-left: 0.8rem; */
     padding: 0.9rem;
     color: var(--color-brown-dark);
     border-bottom: 2px solid var(--color-lines) ;
   }
-
 
   .menu-button:hover {
     border-left: 6px solid var(--color-primary-to-gradiente);
@@ -41,6 +39,10 @@
     
   }
 
+  .menu-button span {
+    padding-left: 2rem;
+  }
+
   .sidenav img {
-    width:18rem;
+    width:23rem;
   }

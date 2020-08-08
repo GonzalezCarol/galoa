@@ -33,16 +33,16 @@
     flex-direction: column;
     align-items: start;
     padding: 1.6rem 0;
-    padding-left: 2.0rem;
+    padding-left: 5rem;
     color: var(--color-brown-dark);
     
     
 }
 .page-header .top-bar-container .top-bar-container-text h3 {
-    font: 500 1.6rem Roboto;
+    font: 500 1.4rem Roboto;
 }
 .page-header .top-bar-container .top-bar-container-text h2 {
-    font: 500 2.8rem Roboto;
+    font: 500 2.4rem Roboto;
 }
 
 .page-header .top-bar-container > img {

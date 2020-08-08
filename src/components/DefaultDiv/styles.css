@@ -1,0 +1,14 @@
+.container-div{
+    border: 1px var(--color-primary-lighter);
+    background-color:var(--color-primary-lighter) ;
+    height: 20rem;
+    width: 28rem;
+
+}
+
+.header-div{
+    background-color: var(--color-primary-lighter);
+    width: 24.2rem;
+    height: 4.5rem;
+}
+     

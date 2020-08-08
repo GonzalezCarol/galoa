@@ -1,30 +1,36 @@
+#video {
+    display: flex;
+    flex-direction: row;
+    padding-left: 27rem;
+}
+
 .div-video {
-    height: 39rem;
-    width: 70rem;
-    background-image: url('../../assets/images/dewey.png');
+    height: 42.3rem;
+    width: 82rem;
+    background-image: url('../../assets/images/dewey.jpg');
     position: absolute;
     border-radius: 3px;
     
 } 
 .div-video-child {
-    height: 39rem;
-    width: 70rem;
+    height: 42.3rem;
+    width: 82rem;
     display: flex;
     flex-direction: column;
-    opacity: 0.7;
     position: relative;
     border-radius: 3px;
-    background-color: var(--color-primary-dark);
+    background-color: rgba(141, 53, 6, 0.5);
  
 } 
 
 .div-video-child .video-title{
-   font: 500 2.3rem Roboto;
+   font: 500 2.8rem Roboto;
    padding: 3.0rem;
    color: var(--color-background);
 
 
 } 
+
 
 .footer {
     display: flex;
@@ -32,26 +38,53 @@
     left: 0;
     bottom: 0;
     position: absolute;
-    margin-bottom:4.5rem;
-    margin-left:2rem;
+    margin-bottom:4.8rem;
+    margin-left:3rem;
 }
 
 .footer img{
-    height: 5.3rem;
-    width: 5.6rem;
+    height: 8.3rem;
+    width: 8.6rem;
     border-radius: 50%;
     border: 0.1rem solid;
     border-color: var(--color-primary);
     
 }
 
-.footer .footer-title {
+.div-video-child .footer .footer-title #firstp {
     color: var(--color-background);
-    font: 500 2.4rem Roboto;
+    font:900 3.2rem Roboto;
     margin-left: 1.6rem;
-    
+    margin-top: 1.3rem;
 }
 
+.div-video-child .footer .footer-title #secondp {
+    color: var(--color-background);
+    font:500 1.8rem Roboto;
+    margin-left: 1.6rem;
+}
+
+.container-div{
+    border: 1px var(--color-primary-lighter);
+    padding-left: 5rem;
+    height: 12rem;
+    width: 28rem;
+    margin-right: 5rem;
+    height: 41rem;
+
+
+}
+
+.header-div{
+    background-color: var(--color-primary-lighter);
+    width: 25rem;
+    height:4.5rem;
+}
+
+
+
+/* 
+    CSS dos itens do play
 .div-video-child .play-elements  .progress-status { 
     width:70%;
     height: 0.4rem; 
@@ -110,10 +143,10 @@
     height: 2.6rem;
     transform: translateY(-26%);
     opacity: 0.6;
-   }
-   
-       
- 
+   } */
      
 
+   
+       
+  
     
