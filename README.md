@@ -1,1 +1,1 @@
-# Exercicio de triagem Galoá desenvolvido em react por: Carolina Gonzalez
+# Exercicio de triagem Galoá desenvolvido em ReactJS por: Carolina Gonzalez
