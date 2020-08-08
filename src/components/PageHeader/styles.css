@@ -10,7 +10,8 @@
     top: 0;
     left: 0;
     right: 0;
-    padding-left: 15rem;
+    padding: 0.4rem;
+    padding-left: 18rem;
 }
 
 .page-header .top-bar-container {

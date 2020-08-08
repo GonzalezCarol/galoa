@@ -1,7 +1,8 @@
 import React from 'react';
-
-import './styles.css'
 import { Link } from 'react-router-dom';
+
+import slaca from '../../assets/images/logo-slaca.svg'
+import './styles.css'
 function SideMenu() {
     return (
         <>
@@ -9,7 +10,7 @@ function SideMenu() {
         <div className="slaca">
                 SLACA 2019
         </div>
-        <img src="" alt=""/>
+        <img src={slaca} alt=""/>
            <Link to="" className="menu-button">Apresentação</Link>
            <Link to="" className="menu-button">Comitês</Link>
            <Link to="" className="menu-button">Autores</Link>

@@ -1,14 +1,14 @@
 .div-video {
-    height: 40rem;
-    width: 67rem;
-    background-image: url('../../assets/images/ocean.jpg');
+    height: 39rem;
+    width: 70rem;
+    background-image: url('../../assets/images/dewey.png');
     position: absolute;
     border-radius: 3px;
     
 } 
 .div-video-child {
-    height: 40rem;
-    width: 67rem;
+    height: 39rem;
+    width: 70rem;
     display: flex;
     flex-direction: column;
     opacity: 0.7;
@@ -19,7 +19,7 @@
 } 
 
 .div-video-child .video-title{
-   font: 900 2.2rem Roboto;
+   font: 500 2.3rem Roboto;
    padding: 3.0rem;
    color: var(--color-background);
 
@@ -32,7 +32,8 @@
     left: 0;
     bottom: 0;
     position: absolute;
-    margin:3rem;
+    margin-bottom:4.5rem;
+    margin-left:2rem;
 }
 
 .footer img{
