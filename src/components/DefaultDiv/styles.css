@@ -1,14 +1,62 @@
-.container-div{
-    border: 1px var(--color-primary-lighter);
-    background-color:var(--color-primary-lighter) ;
-    height: 20rem;
-    width: 28rem;
 
-}
+  .container-div-default{
+    margin-top: 4rem;
+    margin-left: 27rem;
+   
+    border-radius: 0.3rem;
+  }
 
-.header-div{
+  .header-div-default {
+    height:4.5rem;
+    width: 112rem;
+    padding: 1rem;
     background-color: var(--color-primary-lighter);
-    width: 24.2rem;
-    height: 4.5rem;
+    font: 500 2rem Roboto ;
+    color: var(--color-grey-light);
+  }
+
+  .body-resume-div-default {
+    padding: 1rem;
+    height:10.2rem;
+    width: 112rem;
+    overflow: hidden;
+    border: 1px solid var(--color-primary-lighter);
+    line-height: 23px;
+    letter-spacing: 0.02em;
+    
+  }
+  .body-resume-div-default:focus{
+    height:43rem;
+    overflow: visible;
+  }
+
+  .header-discussion-div {
+    border: 1px solid var(--color-primary-lighter);
+    width: 112rem;
+  }
+
+  .header-discussion-div .title{
+    color: var(--color-primary);
+    width: 112rem;
+    display: flex;
+    justify-content: center;
+    font: 900 1.2em ROboto;
+    padding-top: 1rem;
+  }
+
+  .header-discussion-div .icons{
+    display: flex;
+    justify-content: center;
+    
+  }
+  .header-discussion-div .icons img{
+    margin: 3rem;
+  }
+
+.header-discussion-div .word-wrap span {
+  display: flex;
+  justify-content: center;
+  padding: 0.3rem;
+  font: 300 1.5rem Roboto;
+  color: var(--color-grey-light);
 }
-     

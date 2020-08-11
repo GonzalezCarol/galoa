@@ -6,13 +6,15 @@
     --color-primary-light:#fca950;
     --color-brown: #f5d5c6;
     --color-brown-light:#fce3d8;
-    --color-brown-dark:#776362;
+    --color-brown-dark:#4E4E4E;
     --color-black: #0000;
     --color-primary-side: #f2833e;
     --color-lines: #e4d7d7;
     --color-primary-to-gradiente: #fdaa50;
     --color-blue: #0daef5;
-
+    --color-scrollbar-back:#E7E7E7;
+    --color-scrollbar-front:#BFBFBF;
+    --color-grey-light: #5C5C5C;
     font-size: 70%;
 }
 

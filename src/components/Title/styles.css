@@ -19,12 +19,12 @@
 }
 
 
-.div-top .right-elements .how {
+.div-top .right-elements .how span {
     color: var(--color-primary);
     font: 500 1.4rem Roboto;
     display: flex;
     justify-content: end;
-
+    padding-right: 1rem;
        
 }
 

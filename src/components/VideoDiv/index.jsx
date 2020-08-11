@@ -10,7 +10,7 @@ import DefaultDiv from '../DefaultDiv';
 function VideoDiv(props) {
     return(
     <>
-    <div id="video">
+    <div className="video">
         {/* havia começado a fazer o video manualmente antes de receber o link do figma */}
         <div className="div-video"></div>
         <div className="div-video-child">
@@ -39,10 +39,31 @@ function VideoDiv(props) {
         </div>
         <div className="container-div">
             <div className="header-div">
-                <span>caro</span>
+                <span>Detalhes</span>
             </div>
-            <div className="mainbody">
-                teste
+            <div className="main-body">
+                <div className="content">
+                    <p>Tipo de Apresentação: <b>Pôster</b></p>
+                    <p>Eixo temático: <b> Alimentação e saúde (AS) </b> </p>
+                    <p>Palavras-chaves: <b> Alimentos funcionais, alimentação escolar. </b> </p>
+                    <br/>
+                    <p> <b>Autores:</b>
+                    <p> Autores: Galileo Galilei¹ 
+                       <br/> Berta Lange de Morretes² 
+                       <br/> Isaac Newton³
+                       <br/> Cesar Lattes¹
+                       <br/> Stephen Hawking⁴ 
+                    </p></p>
+                    <br/>
+                    <br/>
+                    <p>¹Universidade Estadual de Campinas 
+                        <br/>²Universidade de São Paulo 
+                        <br/> ³Instituto Nacional de Pesquisas Espaciais 
+                        <br/> ⁴Universidade Federal do Rio de Janeiro
+                    </p>
+                </div>
+                <div className="scroll-bar-back"></div>
+                <div className="scroll-bar-front"></div>
             </div>
         </div>
     </div>

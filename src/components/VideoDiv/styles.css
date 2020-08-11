@@ -1,4 +1,4 @@
-#video {
+.video {
     display: flex;
     flex-direction: row;
     padding-left: 27rem;
@@ -65,13 +65,11 @@
 }
 
 .container-div{
-    border: 1px var(--color-primary-lighter);
     padding-left: 5rem;
     height: 12rem;
     width: 28rem;
     margin-right: 5rem;
     height: 41rem;
-
 
 }
 
@@ -79,8 +77,41 @@
     background-color: var(--color-primary-lighter);
     width: 25rem;
     height:4.5rem;
+    border-radius: 0.2rem;
 }
 
+.header-div span {
+    font:500 2.0rem Roboto;
+    color: var(--color-brown-dark);
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-body {
+    display: flex;
+    flex-direction: row;
+    height: 38rem;
+    width: 25rem;
+    border: 2px  solid var(--color-primary-lighter);
+    border-radius: 0.2rem;
+    
+}
+
+
+.main-body .content {
+    height: 36rem;
+    width: 23rem;
+    padding: 0.9rem;
+    overflow: scroll;
+    /* border: 2px  solid var(--color-primary-lighter); */
+    
+}
+
+.main-body .content p {
+    font: 100 1.3rem Roboto;
+    color: var(--color-grey-light);
+}
 
 
 /* 

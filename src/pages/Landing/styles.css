@@ -5,7 +5,7 @@
   .grid-template {
     grid-template:
       "logo nav nav" 50px
-      "sidenav content" 400px
+      "sidenav content" 500px
       "sidenav footer footer" 300px
       / 200px 2fr 25px;
   }
@@ -40,6 +40,8 @@
   ​
   .content {
     grid-area: content;
+    
+    
   }
   ​
   .sidenav {
@@ -49,3 +51,5 @@
   .footer {
     grid-area: footer;  
   }
+
+ 
