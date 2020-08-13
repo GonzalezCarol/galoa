@@ -8,6 +8,7 @@ import Title from '../../components/Title';
 import DefaultDiv from '../../components/DefaultDiv';
 import ButtonCreate from '../../components/ButtonCreate';
 import QuestionDiv from '../../components/QuestionDiv';
+import Footer from '../../components/Footer';
 
 import hand from '../../assets/icons/hand-icon.svg';
 import qa from '../../assets/icons/qa-icon.svg';
@@ -92,6 +93,7 @@ function Landing() {
                             <span> 1 resposta</span>
                         </div>
                         </QuestionDiv>
+
                         <QuestionDiv title="Assunto da pergunta aparece aqui" name="Carlos Henrique Santos">
                         Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
                         <div className="div-footer">
@@ -101,11 +103,29 @@ function Landing() {
                             <span> 1 resposta</span>
                         </div>
                         </QuestionDiv>
+                        <div>
+                            <QuestionDiv  name="Adriano da Silva">
+                            Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                            </QuestionDiv>
+
+                            <QuestionDiv  name="Carlos Henrique Santos">
+                            Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. <br/> <br/>
+                            Obrigada pela resposta, muito interessante o seu trabalho!
+                            </QuestionDiv>
+
+                            <QuestionDiv  name="Camila Ferreira Andrade">
+                            Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo. <br/> <br/>
+                            Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                            </QuestionDiv>
+
+                            <QuestionDiv  name="Ana Carolina">
+                            Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
+                            </QuestionDiv>
+                        </div>
                     </div>
                 </DefaultDiv>
 
-                
-                
+                <Footer />
                 
             </div>
         </section>
