@@ -6,10 +6,14 @@ import SideMenu from '../../components/SideMenu';
 import VideoDiv from '../../components/VideoDiv';
 import Title from '../../components/Title';
 import DefaultDiv from '../../components/DefaultDiv';
+import ButtonCreate from '../../components/ButtonCreate';
+import QuestionDiv from '../../components/QuestionDiv';
 
 import hand from '../../assets/icons/hand-icon.svg';
 import qa from '../../assets/icons/qa-icon.svg';
 import chat from '../../assets/icons/chat-icon.svg';
+import information from '../../assets/icons/information-icon.svg';
+import like from '../../assets/icons/fav-icon.svg';
 
 
 
@@ -73,9 +77,35 @@ function Landing() {
                              <span> Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus </span>
                              <span>questionamentos ou sugestões para o autor!</span>
                         </div>
-                    </div>
+                        <br/>
+                        <hr/>
+                        <div className="div-create">
+                            <ButtonCreate />
+                        </div>
 
+                        <QuestionDiv title="Assunto da pergunta aparece aqui" name="Carlos Henrique Santos">
+                        Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
+                        <div className="div-footer">
+                            <img src={information} alt="Mais informações"/>
+                            <img src={like} alt="Like"/>
+                            <span> 1 like</span>
+                            <span> 1 resposta</span>
+                        </div>
+                        </QuestionDiv>
+                        <QuestionDiv title="Assunto da pergunta aparece aqui" name="Carlos Henrique Santos">
+                        Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
+                        <div className="div-footer">
+                            <img src={information} alt="Mais informações"/>
+                            <img src={like} alt="Like"/>
+                            <span> 1 like</span>
+                            <span> 1 resposta</span>
+                        </div>
+                        </QuestionDiv>
+                    </div>
                 </DefaultDiv>
+
+                
+                
                 
             </div>
         </section>
