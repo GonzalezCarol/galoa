@@ -17,7 +17,8 @@ import chat from '../../assets/icons/chat-icon.svg';
 function Landing() {
     return (
         <>
-        <section class="grid grid-template gap">
+        <section className="grid grid-template gap">
+            
             <SideMenu className="side-nav" />
             <PageHeader className="page-header" />
 
@@ -58,7 +59,7 @@ function Landing() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </div> 
                 </DefaultDiv>
-                
+                 
                 
                 <DefaultDiv title="Discussões">
                     <div className="header-discussion-div">

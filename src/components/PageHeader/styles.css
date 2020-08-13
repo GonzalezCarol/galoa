@@ -4,9 +4,9 @@
 
 .page-header {
     background-color: var(--color-primary-lighter);
-    display: flex;
+    display: absolute;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;

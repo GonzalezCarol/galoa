@@ -1,51 +1,33 @@
 
 .grid {
     display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+      "side-nav page-header page-header" 
+      "side-nav  content content" 
+      "side-nav  footer footer" 
+      /1fr 3fr;
+     
   }
-  .grid-template {
-    grid-template:
-      "logo nav nav" 50px
-      "sidenav content" 500px
-      "sidenav footer footer" 300px
-      / 200px 2fr 25px;
-  }
-  ​
-  .gap {
-    gap: 20px;
-  }
-  ​
-  .column-gap {
-    gap: 2px;
-    column-gap: 20px;
-  }
-  ​
-  .row-gap {
-    gap: 2px;
-    row-gap: 20px;
-  }
-  ​
+  ​  ​
   .margin {
     margin-top: 10px;
     margin-left: 20px;
     margin-bottom: 50px;
   }
-  ​
-  .logo {
-    grid-area: logo;
-  }
-  ​
-  .nav {
-    grid-area: nav;
-  }
-  ​
+    ​
   .content {
     grid-area: content;
-    
-    
+  
+  }
+  .page-header {
+    grid-area: page-header ;
+  
   }
   ​
-  .sidenav {
-    grid-area: sidenav;
+  .side-nav {
+    grid-area: side-nav;
   }
   ​
   .footer {

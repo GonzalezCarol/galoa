@@ -8,8 +8,10 @@
     height: 42.3rem;
     width: 82rem;
     background-image: url('../../assets/images/dewey.jpg');
-    position: absolute;
+    position: relative;
+    z-index: 0;
     border-radius: 3px;
+    
     
 } 
 .div-video-child {
@@ -17,7 +19,8 @@
     width: 82rem;
     display: flex;
     flex-direction: column;
-    position: relative;
+    z-index: 1;
+    position: absolute;
     border-radius: 3px;
     background-color: rgba(141, 53, 6, 0.5);
  
