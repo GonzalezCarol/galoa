@@ -3,12 +3,14 @@ import React from 'react';
 import create from '../../assets/icons/create-icon.svg';
 import './styles.css';
 
-function ButtonCreate() {
+function ButtonCreate({ content, icon, buttoncrt}) {
     return(
-        <button type="button" className="button-create">
+        <button type="button" className={buttoncrt}>
             <div>
-                <img src={create} alt="Botão Criar"/>
-                <span className="create"> criar tópico </span>
+                { icon &&
+                 <img src={create} alt="Botão Criar"/>
+                }
+                <span className="create">{content} </span>
             </div>
         </button>
     )

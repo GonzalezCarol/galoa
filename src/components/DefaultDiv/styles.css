@@ -97,6 +97,19 @@
   padding:1rem 2rem;
   
 }
+.header-discussion-div .waiting-feedback {
+  display: flex;
+  flex-direction: column;
+}
+.header-discussion-div .waiting-feedback span{
+  padding:2rem;
+}
+
+.header-discussion-div .discover-others {
+    color: var(--color-primary-half);
+    text-decoration: underline;
+    align-self: center;
+}
 
 .header-discussion-div .footer-textarea button {
   background: linear-gradient(180deg, var(--color-primary-to-gradiente) 0%, var(--color-primary-side) 100%);

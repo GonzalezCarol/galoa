@@ -18,11 +18,15 @@ import information from '../../assets/icons/information-icon.svg';
 import like from '../../assets/icons/fav-icon.svg';
 import bold from '../../assets/icons/bold.svg';
 import italic from '../../assets/icons/italic.svg';
+import iconDark from '../../assets/icons/icon-dark.svg';
 
 
 
 function Landing() {
-    const [showinputheader, setShowInputHeader] = useState(false);
+    const [form, setForm] = useState(false);
+    const [defaultHeader, setDefaultHeader] = useState(true);
+    const [waitingFeedback, setWaitingFeedback] = useState(false);
+    
 
     return (
         <>
@@ -73,7 +77,7 @@ function Landing() {
                 <DefaultDiv title="Discussões">
                     <div className="header-discussion-div">
                         { 
-                             !showinputheader &&
+                             defaultHeader &&
                              <>
 
                             <span className="title">Compartilhe suas ideias ou dúvidas com os autores!</span>
@@ -86,10 +90,15 @@ function Landing() {
                                 <span> Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus </span>
                                 <span>questionamentos ou sugestões para o autor!</span>
                             </div>
+                            <br/>
+                            <hr/>
+                            <div className="div-create" onClick={() => setForm(true) } >
+                                <ButtonCreate content="Criar tópico" icon="true"  buttoncrt="button-create-default" />
+                            </div>
                             </>
                         }
                         {
-                            showinputheader &&
+                            form && 
                             <>
                             <span className="input-title">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores! </span>
                             <span className="primary-title"> Assunto</span>
@@ -101,17 +110,42 @@ function Landing() {
                                             <img src={bold} alt="Negrito"/>
                                             <img src={italic} alt="Italico"/>
                                         </div>
-                                        <button type="button"> Enviar </button>
+                                        <button type="button" onClick={() => setWaitingFeedback(true)}> Enviar </button>
                                     </div>
                                 </div>
                             </>
 
                         }
-                        <br/>
-                        <hr/>
-                        <div className="div-create" onClick={() => setShowInputHeader(true)} >
-                            <ButtonCreate  />
-                        </div>
+                        {
+                            waitingFeedback &&
+                            <>
+                            <div className="waiting-feedback">
+                                <span className="title">Seu tópico foi enviado com sucesso! :D !</span>
+                                <span className="input-title">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido! </span>
+                                <span className="discover-others">Descubra outros trabalhos</span>
+                            </div>
+                            <br/>
+                            <hr/>
+                            <div className="div-create">
+                                <ButtonCreate content="Criar Novo tópico" buttoncrt="button-create-new" />
+                            </div>
+                            
+                            <div className="div-waiting-feedback">
+                                <div className="text">
+                                    <img src={iconDark} alt="Icone escuro"/>
+                                    Aguardando feedback dos autores
+                                <span className="discover-others">Editar tópico</span>
+                                </div>
+                                <QuestionDiv title="Assunto da pergunta aparece aqui" name="Carlos Henrique Santos" background="true">
+                                    Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
+                                    Aguardando feedback dos autores
+                                </QuestionDiv>
+                            </div>
+                            
+                        
+                            </>
+
+                        }
 
                         <QuestionDiv title="Assunto da pergunta aparece aqui" name="Carlos Henrique Santos">
                         Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
@@ -122,7 +156,6 @@ function Landing() {
                             <span> 1 resposta</span>
                         </div>
                         </QuestionDiv>
-
                        
                         <QuestionViewMore />
                          

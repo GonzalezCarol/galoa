@@ -102,7 +102,6 @@
     height: 36rem;
     width: 23rem;
     padding: 0.9rem;
-    overflow: scroll;  
 }
 
 .main-body .content::-webkit-scrollbar-thumb:vertical{
@@ -115,6 +114,21 @@
     color: var(--color-grey-light);
 }
 
+.container-div .main-body .scroll-bar-1 {
+    height: 20rem;
+    width: 0.3rem;
+    background: var(--color-scrollbar-front);
+    border-radius: 1rem;
+    position: relative;
+}
+.container-div .main-body .scroll-bar-2 {
+    margin-top: 0.8rem;
+    height: 35rem;
+    width: 0.3rem;
+    background: var(--color-scrollbar-back);
+    border-radius: 1rem;
+    position: relative;
+}
 
 /* 
     CSS dos itens do play

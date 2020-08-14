@@ -3,10 +3,10 @@ import iconSvg from '../../assets/icons/icon.svg';
 
 import './styles.css'
 
-function QuestionDiv({ title, name, children, who, icon, ...rest }) {
+function QuestionDiv({ title, name, children, who, icon, background, ...rest }) {
    
     return (
-        <div className="question-div" {...rest}>
+        <div className={background ? 'background' : 'question-div'} {...rest}>
             <span className="question-title">
                 {title}
             </span>

@@ -62,8 +62,9 @@ function VideoDiv(props) {
                         <br/> ⁴Universidade Federal do Rio de Janeiro
                     </p>
                 </div>
-                <div className="scroll-bar-back"></div>
-                <div className="scroll-bar-front"></div>
+                <div className="scroll-bar-2">
+                    <div className="scroll-bar-1"></div>
+                </div>
             </div>
         </div>
     </div>
