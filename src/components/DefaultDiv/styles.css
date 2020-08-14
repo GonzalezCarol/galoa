@@ -44,6 +44,70 @@
     padding-top: 1rem;
   }
 
+  .header-discussion-div .input-title{
+    color: var(--color-brown-dark);
+    width: 112rem;
+    display: flex;
+    justify-content: center;
+    font: 100 1em Roboto;
+    padding-top: 1rem;
+  }
+
+   .header-discussion-div .primary-title{
+    font: 500 2rem Roboto;
+    color: var(--color-primary);
+    margin-left: 0.8rem;
+    margin: 1rem 2rem;
+   }
+
+   .header-discussion-div #subject {
+      width: 108rem;
+      height: 4rem;
+      border: 0.1rem solid var(--color-grey-lighter);
+      border-radius: 0.4rem;
+      box-sizing: border-box;
+      margin-left: 0.8rem;
+      margin: 1rem 2rem;
+   }
+
+   .header-discussion-div .textarea {
+    width: 108rem;
+    height: 14rem;
+    border: 0.1rem solid var(--color-grey-lighter);
+    border-radius: 0.3rem;
+    box-sizing: border-box;
+    margin-left: 0.8rem;
+    margin: 1rem 2rem;
+ }
+
+ .header-discussion-div .footer-textarea {
+  width: 107.9rem;
+  height: 3rem;
+  border: 0rem solid var(--color-grey-lighter);
+  background-color:var(--color-white-dark);
+  box-sizing: border-box;
+  bottom: 0;
+  margin-top: 11rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-discussion-div .footer-textarea .boldital img {
+  padding:1rem 2rem;
+  
+}
+
+.header-discussion-div .footer-textarea button {
+  background: linear-gradient(180deg, var(--color-primary-to-gradiente) 0%, var(--color-primary-side) 100%);
+  width: 20rem;
+  border: none;
+  color: var(--color-background);
+  
+}
+
+
+
   .header-discussion-div .icons{
     display: flex;
     justify-content: center;

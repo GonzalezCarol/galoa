@@ -1,19 +1,30 @@
 import React from 'react';
+import iconSvg from '../../assets/icons/icon.svg';
 
 import './styles.css'
 
-function QuestionDiv(props) {
+function QuestionDiv({ title, name, children, who, icon, ...rest }) {
+   
     return (
-        <div className="question-div">
+        <div className="question-div" {...rest}>
             <span className="question-title">
-                {props.title}
+                {title}
             </span>
-            <span className="question-name">
-                {props.name}
-            </span>
-            <p>
-                {props.children}
-            </p>
+            <div className="name-who">
+                <div className="question-name">
+                    {name}
+                </div>
+                <div className="question-who">
+                    {who}
+                </div>
+                {
+                    icon &&
+                    <img src={iconSvg} alt="Icone"/> 
+                }
+            </div>
+            <div>
+                {children}
+            </div>
         </div>
     )
 }

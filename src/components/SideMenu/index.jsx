@@ -6,7 +6,7 @@ import './styles.css'
 function SideMenu() {
     return (
         <>
-        <div class="sidenav">    
+        <div className="sidenav">    
         <div className="slaca">
                 SLACA 2019
         </div>

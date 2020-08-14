@@ -1,4 +1,4 @@
-import React from 'react';
+import  React, { useState } from 'react';
 
 import './styles.css'
 import PageHeader from '../../components/PageHeader';
@@ -8,6 +8,7 @@ import Title from '../../components/Title';
 import DefaultDiv from '../../components/DefaultDiv';
 import ButtonCreate from '../../components/ButtonCreate';
 import QuestionDiv from '../../components/QuestionDiv';
+import QuestionViewMore from '../../components/QuestionViewMore';
 import Footer from '../../components/Footer';
 
 import hand from '../../assets/icons/hand-icon.svg';
@@ -15,11 +16,14 @@ import qa from '../../assets/icons/qa-icon.svg';
 import chat from '../../assets/icons/chat-icon.svg';
 import information from '../../assets/icons/information-icon.svg';
 import like from '../../assets/icons/fav-icon.svg';
-
+import bold from '../../assets/icons/bold.svg';
+import italic from '../../assets/icons/italic.svg';
 
 
 
 function Landing() {
+    const [showinputheader, setShowInputHeader] = useState(false);
+
     return (
         <>
         <section className="grid grid-template gap">
@@ -68,20 +72,45 @@ function Landing() {
                 
                 <DefaultDiv title="Discussões">
                     <div className="header-discussion-div">
-                        <span className="title">Compartilhe suas ideias ou dúvidas com os autores!</span>
-                        <div className="icons">
-                            <img src={hand} alt="Icone Mãos"/>
-                            <img src={qa} alt="Icone QA"/>
-                            <img src={chat} alt="Icone Chat"/>
-                        </div>
-                        <div className="word-wrap">
-                             <span> Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus </span>
-                             <span>questionamentos ou sugestões para o autor!</span>
-                        </div>
+                        { 
+                             !showinputheader &&
+                             <>
+
+                            <span className="title">Compartilhe suas ideias ou dúvidas com os autores!</span>
+                            <div className="icons">
+                                <img src={hand} alt="Icone Mãos"/>
+                                <img src={qa} alt="Icone QA"/>
+                                <img src={chat} alt="Icone Chat"/>
+                            </div>
+                            <div className="word-wrap">
+                                <span> Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus </span>
+                                <span>questionamentos ou sugestões para o autor!</span>
+                            </div>
+                            </>
+                        }
+                        {
+                            showinputheader &&
+                            <>
+                            <span className="input-title">Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores! </span>
+                            <span className="primary-title"> Assunto</span>
+                                <input type="text" name="subject" id="subject"/>
+                            <span className="primary-title"> Conteúdo</span>
+                                <div className="textarea">
+                                    <div className="footer-textarea">
+                                        <div className="boldital">
+                                            <img src={bold} alt="Negrito"/>
+                                            <img src={italic} alt="Italico"/>
+                                        </div>
+                                        <button type="button"> Enviar </button>
+                                    </div>
+                                </div>
+                            </>
+
+                        }
                         <br/>
                         <hr/>
-                        <div className="div-create">
-                            <ButtonCreate />
+                        <div className="div-create" onClick={() => setShowInputHeader(true)} >
+                            <ButtonCreate  />
                         </div>
 
                         <QuestionDiv title="Assunto da pergunta aparece aqui" name="Carlos Henrique Santos">
@@ -94,34 +123,9 @@ function Landing() {
                         </div>
                         </QuestionDiv>
 
-                        <QuestionDiv title="Assunto da pergunta aparece aqui" name="Carlos Henrique Santos">
-                        Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo...
-                        <div className="div-footer">
-                            <img src={information} alt="Mais informações"/>
-                            <img src={like} alt="Like"/>
-                            <span> 1 like</span>
-                            <span> 1 resposta</span>
-                        </div>
-                        </QuestionDiv>
-                        <div>
-                            <QuestionDiv  name="Adriano da Silva">
-                            Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
-                            </QuestionDiv>
-
-                            <QuestionDiv  name="Carlos Henrique Santos">
-                            Consegui entender melhor agora! Parece que a variação da análise da dimensão e impacto de processo formativo situado impacto de processo formativo. <br/> <br/>
-                            Obrigada pela resposta, muito interessante o seu trabalho!
-                            </QuestionDiv>
-
-                            <QuestionDiv  name="Camila Ferreira Andrade">
-                            Também ínteressante lembrar que o relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo. <br/> <br/>
-                            Situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
-                            </QuestionDiv>
-
-                            <QuestionDiv  name="Ana Carolina">
-                            Resposta do autor é aqui. Relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo resente relato inscreve-se no campo da análise da dimensão e impacto de processo formativo situado impacto de processo formativo processo.
-                            </QuestionDiv>
-                        </div>
+                       
+                        <QuestionViewMore />
+                         
                     </div>
                 </DefaultDiv>
 

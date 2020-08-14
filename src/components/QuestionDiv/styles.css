@@ -1,6 +1,8 @@
 .question-div {
     padding: 2rem;
-    margin: 1.4rem;
+    margin-top: 1.4rem;
+    margin-left: 1.4rem;
+    margin-right: 1.4rem;
     border: 0.1rem solid var(--color-primary-lighter);
     border-radius: 0.4rem;
     box-sizing: border-box;
@@ -14,11 +16,26 @@
     font: 500 2rem Roboto;
 }
 
-.question-name{
+.name-who {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.name-who .question-name{
     padding-top: 1rem;
     padding-bottom: 1rem;
     font:500 1.4rem Roboto;
-    color: var(--color-brown-dark)
+    width: 16rem;
+    color: var(--color-brown-dark);
+}
+.name-who .question-who{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 80rem;
+    font:500 1.4rem Roboto;
+    color: var(--color-primary);
+    
 }
 
 .div-footer {
@@ -36,3 +53,4 @@
     /* font: 1.3rem Roboto; */
     color: var(--color-grey-light);
 }
+

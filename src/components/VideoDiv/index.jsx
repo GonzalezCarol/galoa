@@ -1,11 +1,11 @@
 import React from 'react';
 
 import galileu from '../../assets/images/galileu.jpg';
-import play from '../../assets/images/play-button.svg';
-import conf from '../../assets/images/conf.svg';
-import audio from '../../assets/images/audio.svg';
+// import play from '../../assets/images/play-button.svg';
+// import conf from '../../assets/images/conf.svg';
+// import audio from '../../assets/images/audio.svg';
 import './styles.css';
-import DefaultDiv from '../DefaultDiv';
+// import DefaultDiv from '../DefaultDiv';
 
 function VideoDiv(props) {
     return(
@@ -47,13 +47,13 @@ function VideoDiv(props) {
                     <p>Eixo temático: <b> Alimentação e saúde (AS) </b> </p>
                     <p>Palavras-chaves: <b> Alimentos funcionais, alimentação escolar. </b> </p>
                     <br/>
-                    <p> <b>Autores:</b>
+                    <p> <b>Autores:</b></p>
                     <p> Autores: Galileo Galilei¹ 
                        <br/> Berta Lange de Morretes² 
                        <br/> Isaac Newton³
                        <br/> Cesar Lattes¹
                        <br/> Stephen Hawking⁴ 
-                    </p></p>
+                    </p>
                     <br/>
                     <br/>
                     <p>¹Universidade Estadual de Campinas 

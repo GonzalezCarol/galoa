@@ -9,7 +9,7 @@ function PageHeader() {
     return (
         <nav className="page-header">
            <div className="top-bar-container">
-               <div class="top-bar-container-text">
+               <div className="top-bar-container-text">
                     <h3>Anais do Simpósio Latino Americano de Ciências de Alimentos</h3>
                     <h2>Anais do Simpósio Latino Americano de Ciências de Alimentos</h2>
                     <h3>ISSN: 1234-5678</h3>
@@ -18,7 +18,7 @@ function PageHeader() {
                 <button type="button" className="button-language" > 
                     <img src={mundial} /> PT, BR
                 </button>
-                <div class="top-bar-container-text-wel">
+                <div className="top-bar-container-text-wel">
                     <span>Bem Vinda!</span>
                     <strong>carolina@galoascience.com</strong>
                 </div>
