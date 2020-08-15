@@ -28,8 +28,16 @@ function Landing() {
     const [waitingFeedback, setWaitingFeedback] = useState(false);
     
 
+  //  [showHeader, setShowHeader] = useState([]);  
+    // const headers = [  <HeaderLandDefault />, <HeaderLandForm />, <HeaderLandFeedback />]
+
+    // function changeState (props) {
+    //     setShowHeader = props;
+    // };
+
     return (
         <>
+
         <section className="grid grid-template gap">
             
             <SideMenu className="side-nav" />
@@ -76,7 +84,9 @@ function Landing() {
                 
                 <DefaultDiv title="Discussões">
                     <div className="header-discussion-div">
-                        { 
+                        
+                           {/* { header[showHeader] }     Aqui eu iria mostrar o componente com o clicar do botao*/}  
+                           { 
                              defaultHeader &&
                              <>
 
